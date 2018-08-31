@@ -1,0 +1,1684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="2.9" DspName="Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider" CollationLcid="1033" CollationCaseSensitive="False" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+	<Header>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="130" />
+		</CustomData>
+		<CustomData Category="Reference" Type="Assembly">
+			<Metadata Name="LogicalName" Value="UFFLDB.dll" />
+			<Metadata Name="FileName" Value="C:\USERS\MARK\DOCUMENTS\VISUAL STUDIO 2017\PROJECTS\UFFLSOLUTION\UFFLDB\OBJ\DEBUG\UFFLDB.DLL" />
+			<Metadata Name="AssemblyName" Value="UFFLDB" />
+			<Metadata Name="PermissionSet" Value="SAFE" />
+			<Metadata Name="Owner" Value="" />
+			<Metadata Name="GenerateSqlClrDdl" Value="True" />
+			<Metadata Name="IsVisible" Value="True" />
+			<Metadata Name="IsModelAware" Value="True" />
+			<Metadata Name="SkipCreationIfEmpty" Value="True" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Mark\Documents\Visual Studio 2017\Projects\UFFLSolution\UFFLDB\obj\Debug\UFFLDB.pdb" />
+		</CustomData>
+		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
+	</Header>
+	<Model>
+		<Element Type="SqlDatabaseOptions">
+			<Property Name="Collation" Value="SQL_Latin1_General_CP1_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="IsFullTextEnabled" Value="True" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Property Name="DefaultLanguage" Value="" />
+			<Property Name="DefaultFullTextLanguage" Value="" />
+			<Property Name="QueryStoreStaleQueryThreshold" Value="367" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlSchema" Name="[uffl]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlTable" Name="[uffl].[FileSchema]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[uffl].[FileSchema].[FileSchemaID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[uffl].[FileSchema].[FileName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="150" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[uffl].[FileSchema].[RowsToSkipFromTop]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[uffl].[FileSchema].[RowsToSkipFromBottom]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[uffl].[FileSchema].[RowIndexesToIgnore]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[uffl].[FileSchema].[ColumnDelim]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="1" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[uffl].[FileSchema].[FileSchema]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="2000" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[uffl].[FileSchema].[FileDescription]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[uffl]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="3" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[uffl].[FK_UniversalReceiver_FileSchema]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[uffl].[UniversalReceiver].[FileSchemaID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[uffl].[UniversalReceiver]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[uffl].[FileSchema].[FileSchemaID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[uffl].[FileSchema]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[uffl].[PK_FileSchema]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[uffl].[FileSchema].[FileSchemaID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[uffl].[FileSchema]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="3" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[uffl].[PK_UniversalReceiver]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[uffl].[UniversalReceiver].[FileRowID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[uffl].[UniversalReceiver]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+		</Element>
+		<Element Type="SqlInlineTableValuedFunction" Name="[uffl].[tvf_DelimitedSplit8K]">
+			<Property Name="IsSchemaBound" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[uffl].[tvf_DelimitedSplit8K].[@pString]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[cteTally].[N]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimitedSplit8K].[@pDelimiter]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[cteStart].[N1]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[cteLen].[N1]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[cteLen].[L1]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimitedSplit8K].[ItemNumber]" />
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimitedSplit8K].[Item]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[E1]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[E1].[N]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[E2]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[E2].[N]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[E4]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[E4].[N]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[cteTally]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[cteTally].[N]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[cteStart]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[cteStart].[N1]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[cteLen]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[cteLen].[N1]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[cteStart].[N1]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimitedSplit8K].[CTE1].[cteLen].[L1]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="FunctionBody">
+				<Entry>
+					<Element Type="SqlScriptFunctionImplementation">
+						<Property Name="BodyScript">
+							<Value><![CDATA[
+--===== "Inline" CTE Driven "Tally Table" produces values from 1 up to 10,000...
+     -- enough to cover VARCHAR(8000)
+WITH E1(N) AS 
+(
+	SELECT 1 UNION ALL SELECT 1 UNION ALL SELECT 1 UNION ALL
+	SELECT 1 UNION ALL SELECT 1 UNION ALL SELECT 1 UNION ALL
+	SELECT 1 UNION ALL SELECT 1 UNION ALL SELECT 1 UNION ALL SELECT 1
+),                          --10E+1 or 10 rows
+E2(N) AS 
+(
+	SELECT 1 
+	FROM E1 a, E1 b
+), --10E+2 or 100 rows
+E4(N) AS 
+(
+	SELECT 1 
+	FROM E2 a, E2 b
+), --10E+4 or 10,000 rows max
+cteTally(N) AS 
+(
+	--==== This provides the "base" CTE and limits the number of rows right up front
+    -- for both a performance gain and prevention of accidental "overruns"
+    SELECT TOP (ISNULL(DATALENGTH(@pString),0)) ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) 
+	FROM E4
+),
+cteStart(N1) AS 
+(
+	--==== This returns N+1 (starting position of each "element" just once for each delimiter)
+    SELECT 1 
+	UNION ALL
+    SELECT t.N+1 
+	FROM cteTally t 
+	WHERE SUBSTRING(@pString,t.N,1) = @pDelimiter
+),
+cteLen(N1,L1) AS
+(
+	--==== Return start and length (for use in substring)
+    SELECT	 s.N1
+			,ISNULL(NULLIF(CHARINDEX(@pDelimiter,@pString,s.N1),0)-s.N1,8000)
+    FROM cteStart s
+)
+--===== Do the actual split. The ISNULL/NULLIF combo handles the length for the final element when no delimiter is found.
+SELECT	 ItemNumber = ROW_NUMBER() OVER(ORDER BY l.N1)
+        ,Item       = SUBSTRING(@pString, l.N1, l.L1)
+FROM cteLen l
+]]></Value>
+						</Property>
+						<Annotation Type="SysCommentsObjectAnnotation">
+							<Property Name="Length" Value="3841" />
+							<Property Name="StartLine" Value="1" />
+							<Property Name="StartColumn" Value="1" />
+							<Property Name="HeaderContents" Value="CREATE FUNCTION uffl.[tvf_DelimitedSplit8K]&#xD;&#xA;/*****************************************************************************************************************************************************************************************&#xD;&#xA;&#x9;Synopsis:&#x9;String splitting function written by Jeff Moden&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;http://www.sqlservercentral.com/articles/Tally+Table/72993/ &#xD;&#xA;&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#x9;Change Log&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#x9;ID&#x9;&#x9;WHEN&#x9;&#x9;WHO&#x9;&#x9;&#x9;&#x9;&#x9;TICKET&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;WHAT&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#x9;1&#x9;&#x9;2018-08-31&#x9;MDiamond&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Created&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#x9;Review Log&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#x9;ID&#x9;&#x9;WHEN&#x9;&#x9;WHO&#x9;&#x9;&#x9;&#x9;&#x9;WHAT&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#xD;&#xA;*****************************************************************************************************************************************************************************************/&#xD;&#xA;--===== Define I/O parameters&#xD;&#xA;(&#xD;&#xA;&#x9; @pString VARCHAR(8000)&#xD;&#xA;&#x9;,@pDelimiter CHAR(1)&#xD;&#xA;)&#xD;&#xA;--WARNING!!! DO NOT USE MAX DATA-TYPES HERE!  IT WILL KILL PERFORMANCE!&#xD;&#xA;RETURNS TABLE WITH SCHEMABINDING AS&#xD;&#xA;RETURN" />
+							<Property Name="FooterContents" Value=";" />
+						</Annotation>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[uffl].[tvf_DelimitedSplit8K].[@pString]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="8000" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[uffl].[tvf_DelimitedSplit8K].[@pDelimiter]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="1" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[uffl]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlInlineTableValuedFunction" Name="[uffl].[tvf_DelimStrToColumn]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[@InputString]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[@Delimiter]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimitedSplit8K]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimitedSplit8K].[Item]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimitedSplit8K].[ItemNumber]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[Numbers64].[n]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[Numbers64].[n]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimitedSplit8K].[Item]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[Numbers64].[n]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[1]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[2]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[3]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[4]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[5]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[6]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[7]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[8]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[9]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[10]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[11]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[12]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[13]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[14]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[15]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[16]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[17]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[18]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[19]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[20]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[21]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[22]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[23]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[24]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[25]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[26]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[27]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[28]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[29]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[30]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[31]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[32]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[33]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[34]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[35]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[36]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[37]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[38]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[39]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[40]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[41]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[42]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[43]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[44]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[45]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[46]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[47]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[48]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[49]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[50]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[51]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[52]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[53]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[54]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[55]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[56]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[57]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[58]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[59]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[60]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[61]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[62]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[63]" />
+				</Entry>
+				<Entry>
+					<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[64]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[1]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[1]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[2]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[2]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[3]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[3]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[4]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[4]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[5]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[5]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[6]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[6]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[7]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[7]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[8]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[8]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[9]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[9]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[10]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[10]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[11]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[11]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[12]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[12]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[13]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[13]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[14]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[14]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[15]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[15]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[16]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[16]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[17]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[17]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[18]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[18]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[19]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[19]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[20]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[20]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[21]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[21]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[22]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[22]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[23]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[23]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[24]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[24]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[25]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[25]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[26]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[26]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[27]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[27]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[28]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[28]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[29]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[29]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[30]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[30]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[31]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[31]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[32]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[32]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[33]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[33]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[34]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[34]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[35]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[35]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[36]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[36]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[37]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[37]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[38]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[38]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[39]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[39]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[40]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[40]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[41]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[41]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[42]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[42]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[43]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[43]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[44]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[44]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[45]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[45]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[46]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[46]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[47]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[47]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[48]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[48]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[49]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[49]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[50]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[50]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[51]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[51]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[52]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[52]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[53]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[53]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[54]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[54]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[55]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[55]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[56]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[56]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[57]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[57]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[58]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[58]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[59]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[59]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[60]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[60]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[61]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[61]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[62]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[62]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[63]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[63]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[64]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[64]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[Base8]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[Base8].[n]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[Numbers64]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[Numbers64].[n]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[Tokens]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[Tokens].[Item]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[uffl].[tvf_DelimitedSplit8K].[Item]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[Tokens].[ItemNumber]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[uffl].[tvf_DelimitedSplit8K].[ItemNumber]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[PrePivot]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[PrePivot].[n]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[Numbers64].[n]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[CTE1].[PrePivot].[Item]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[uffl].[tvf_DelimitedSplit8K].[Item]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[1]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[2]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[3]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[4]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[5]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[6]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[7]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[8]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[9]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[10]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[11]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[12]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[13]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[14]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[15]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[16]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[17]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[18]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[19]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[20]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[21]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[22]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[23]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[24]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[25]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[26]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[27]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[28]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[29]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[30]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[31]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[32]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[33]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[34]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[35]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[36]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[37]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[38]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[39]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[40]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[41]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[42]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[43]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[44]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[45]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[46]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[47]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[48]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[49]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[50]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[51]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[52]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[53]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[54]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[55]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[56]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[57]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[58]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[59]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[60]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[61]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[62]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[63]" />
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[uffl].[tvf_DelimStrToColumn].[PV2].[PivotTable].[64]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="FunctionBody">
+				<Entry>
+					<Element Type="SqlScriptFunctionImplementation">
+						<Property Name="BodyScript">
+							<Value><![CDATA[
+(
+	WITH Base8(n) AS
+	(
+			SELECT 1 UNION ALL SELECT 1 UNION ALL SELECT 1 UNION ALL
+			SELECT 1 UNION ALL SELECT 1 UNION ALL SELECT 1 UNION ALL
+			SELECT 1 UNION ALL SELECT 1 
+	)
+	,Numbers64(n) AS
+	(
+		SELECT CAST(ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS INT)
+		FROM Base8 a, Base8 b
+	)
+	,Tokens AS
+	(
+		SELECT	 Item
+				,ItemNumber
+		FROM uffl.tvf_DelimitedSplit8K(@InputString, @Delimiter)
+	)
+	,PrePivot AS
+	(
+		SELECT	 BS.N
+				,TK.Item
+		FROM Numbers64	BS
+		LEFT
+		JOIN Tokens		TK	ON BS.N = TK.ItemNumber
+	)
+	SELECT [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20], [21], [22], [23], [24], [25], [26], [27], [28], [29], [30], [31], [32], [33], [34], [35], [36], [37], [38], [39], [40], [41], [42], [43], [44], [45], [46], [47], [48], [49], [50], [51], [52], [53], [54], [55], [56], [57], [58], [59], [60], [61], [62], [63], [64]
+	FROM
+	(
+		SELECT	 N
+				,Item 
+		FROM PrePivot
+	) AS SourceTable
+	PIVOT
+	(
+		MAX(Item)
+		FOR N IN ([1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20], [21], [22], [23], [24], [25], [26], [27], [28], [29], [30], [31], [32], [33], [34], [35], [36], [37], [38], [39], [40], [41], [42], [43], [44], [45], [46], [47], [48], [49], [50], [51], [52], [53], [54], [55], [56], [57], [58], [59], [60], [61], [62], [63], [64])
+	) AS PivotTable
+)
+]]></Value>
+						</Property>
+						<Annotation Type="SysCommentsObjectAnnotation">
+							<Property Name="Length" Value="3832" />
+							<Property Name="StartLine" Value="1" />
+							<Property Name="StartColumn" Value="1" />
+							<Property Name="HeaderContents" Value="CREATE FUNCTION [uffl].[tvf_DelimStrToColumn]&#xD;&#xA;/*****************************************************************************************************************************************************************************************&#xD;&#xA;&#x9;Synopsis:&#x9;Translate delimited strings to columns&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Current limitations&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;-&#x9;64 column limit. To add more columns find of CEILING(SQRT(n)) where n are the number of columns sought and modify the CTEs on this basis&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;-&#x9;Delimiter limited to single character&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#x9;Change Log&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#x9;ID&#x9;&#x9;WHEN&#x9;&#x9;WHO&#x9;&#x9;&#x9;&#x9;&#x9;TICKET&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;WHAT&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#x9;1&#x9;&#x9;2018-08-31&#x9;MDiamond&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Created&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#x9;Review Log&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#x9;ID&#x9;&#x9;WHEN&#x9;&#x9;WHO&#x9;&#x9;&#x9;&#x9;&#x9;WHAT&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#xD;&#xA;&#x9;======================================================================================================================================================================================&#xD;&#xA;&#xD;&#xA;*****************************************************************************************************************************************************************************************/&#xD;&#xA;(&#xD;&#xA;&#x9; @InputString&#x9;&#x9;VARCHAR(1500)&#xD;&#xA;&#x9;,@Delimiter&#x9;&#x9;&#x9;CHAR(1)&#xD;&#xA;)&#xD;&#xA;RETURNS TABLE AS RETURN" />
+							<Property Name="FooterContents" Value=";" />
+						</Annotation>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[uffl].[tvf_DelimStrToColumn].[@InputString]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="1500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[uffl].[tvf_DelimStrToColumn].[@Delimiter]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="1" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[uffl]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlTable" Name="[uffl].[UniversalReceiver]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[uffl].[UniversalReceiver].[FileRowID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[uffl].[UniversalReceiver].[FileSchemaID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[uffl].[UniversalReceiver].[FileRowContent]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="4000" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[uffl]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="5" />
+			<AttachedAnnotation Disambiguator="4" />
+		</Element>
+	</Model>
+</DataSchemaModel>

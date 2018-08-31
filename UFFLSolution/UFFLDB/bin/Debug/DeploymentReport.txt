@@ -1,0 +1,20 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [uffl] (Schema)
+       [uffl].[UniversalReceiver] (Table)
+       [uffl].[FileSchema] (Table)
+       [uffl].[FK_UniversalReceiver_FileSchema] (Foreign Key)
+       [uffl].[tvf_DelimitedSplit8K] (Function)
+       [uffl].[tvf_DelimStrToColumn] (Function)
+
+** Supporting actions

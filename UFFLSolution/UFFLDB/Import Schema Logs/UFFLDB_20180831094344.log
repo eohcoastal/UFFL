@@ -1,0 +1,82 @@
+2018/08/31 11:43:44	This log contains information about the import schema operation into project 'UFFLDB' on computer 'DESKTOP-MTEVF8A' by user 'Mark'.
+2018/08/31 11:43:44	Import of database schema has started.
+2018/08/31 11:43:50	Gathering database credentials
+2018/08/31 11:43:50	Gathering database options
+2018/08/31 11:43:50	Gathering generic database scoped configuration option
+2018/08/31 11:43:50	Gathering users
+2018/08/31 11:43:50	Gathering roles
+2018/08/31 11:43:50	Gathering application roles
+2018/08/31 11:43:50	Gathering role memberships
+2018/08/31 11:43:50	Gathering filegroups
+2018/08/31 11:43:50	Gathering full-text catalogs
+2018/08/31 11:43:50	Gathering assemblies
+2018/08/31 11:43:50	Gathering certificates
+2018/08/31 11:43:50	Gathering asymmetric keys
+2018/08/31 11:43:51	Gathering symmetric keys
+2018/08/31 11:43:51	Gathering encrypted symmetric keys
+2018/08/31 11:43:51	Gathering schemas
+2018/08/31 11:43:51	Gathering XML schema collections
+2018/08/31 11:43:51	Gathering user-defined data types
+2018/08/31 11:43:51	Gathering user-defined types
+2018/08/31 11:43:51	Gathering table types
+2018/08/31 11:43:51	Gathering unique keys for table types
+2018/08/31 11:43:51	Gathering primary keys for table types
+2018/08/31 11:43:51	Gathering indexes for table types
+2018/08/31 11:43:51	Gathering check constraints for table types
+2018/08/31 11:43:51	Gathering default constraints for table types
+2018/08/31 11:43:51	Gathering partition functions
+2018/08/31 11:43:51	Gathering partition schemes
+2018/08/31 11:43:51	Gathering functions
+2018/08/31 11:43:51	Gathering encrypted functions
+2018/08/31 11:43:51	Gathering aggregates
+2018/08/31 11:43:51	Gathering procedures
+2018/08/31 11:43:51	Gathering encrypted procedures
+2018/08/31 11:43:51	Gathering tables
+2018/08/31 11:43:51	Gathering primary keys
+2018/08/31 11:43:51	Gathering unique constraints
+2018/08/31 11:43:51	Gathering foreign keys
+2018/08/31 11:43:51	Gathering default constraints
+2018/08/31 11:43:51	Gathering check constraints
+2018/08/31 11:43:51	Gathering views
+2018/08/31 11:43:51	Gathering encrypted views
+2018/08/31 11:43:51	Gathering indexes
+2018/08/31 11:43:51	Gathering statistics
+2018/08/31 11:43:51	Gathering full-text index stoplists
+2018/08/31 11:43:51	Gathering search property lists
+2018/08/31 11:43:51	Gathering search properties
+2018/08/31 11:43:51	Gathering full-text indexes
+2018/08/31 11:43:51	Gathering column store indexes
+2018/08/31 11:43:51	Gathering spatial indexes
+2018/08/31 11:43:51	Gathering XML indexes
+2018/08/31 11:43:51	Gathering Selective XML indexes
+2018/08/31 11:43:51	Gathering encrypted triggers
+2018/08/31 11:43:51	Gathering triggers
+2018/08/31 11:43:51	Gathering encrypted and clr ddl triggers
+2018/08/31 11:43:51	Gathering ddl triggers
+2018/08/31 11:43:51	Gathering synonyms
+2018/08/31 11:43:51	Gathering defaults
+2018/08/31 11:43:51	Gathering data constraint uddt bindings
+2018/08/31 11:43:51	Gathering rules
+2018/08/31 11:43:51	Gathering data constraint uddt bindings
+2018/08/31 11:43:51	Gathering message types
+2018/08/31 11:43:51	Gathering queues
+2018/08/31 11:43:51	Gathering contracts
+2018/08/31 11:43:51	Gathering services
+2018/08/31 11:43:51	Gathering event notifications
+2018/08/31 11:43:51	Gathering remote service bindings
+2018/08/31 11:43:51	Gathering broker priorities
+2018/08/31 11:43:51	Gathering signatures
+2018/08/31 11:43:51	Gathering data compression options
+2018/08/31 11:43:51	Gathering sequence types
+2018/08/31 11:43:51	Gathering security policies
+2018/08/31 11:43:51	Gather column encryption keys
+2018/08/31 11:43:51	Gathering column master keys
+2018/08/31 11:43:51	Gathering external data sources
+2018/08/31 11:43:51	Gathering external file formats
+2018/08/31 11:43:51	Gathering external tables
+2018/08/31 11:43:51	Gathering extended properties
+2018/08/31 11:43:51	Scanning project for duplicate elements
+2018/08/31 11:43:52	Finished duplicate element processing
+2018/08/31 11:43:52	Finished importing database.
+2018/08/31 11:43:52	A summary of the import was saved to the following location: C:\Users\Mark\Documents\Visual Studio 2017\Projects\UFFLSolution\UFFLDB\Import Schema Logs\UFFLDB_20180831094344.log
+2018/08/31 11:43:52	Click Finish to continue...

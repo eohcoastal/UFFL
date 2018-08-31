@@ -1,0 +1,10 @@
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\UFFLSolution\UFFLDB\bin\Debug\UFFLDB.dacpac
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\UFFLSolution\UFFLDB\bin\Debug\UFFLDB.dll
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\UFFLSolution\UFFLDB\bin\Debug\UFFLDB.pdb
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\UFFLSolution\UFFLDB\obj\Debug\UFFLDB.sqlprojAssemblyReference.cache
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\UFFLSolution\UFFLDB\obj\Debug\Model.xml
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\UFFLSolution\UFFLDB\obj\Debug\refactor.xml
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\UFFLSolution\UFFLDB\obj\Debug\postdeploy.sql
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\UFFLSolution\UFFLDB\obj\Debug\predeploy.sql
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\UFFLSolution\UFFLDB\obj\Debug\UFFLDB.dll
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\UFFLSolution\UFFLDB\obj\Debug\UFFLDB.pdb
